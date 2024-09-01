@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.child {
+  background-color: lightcoral;
+  color: white;
+  width: 25%;
+  height: 200px;
+
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.main-header {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: gray;
+  display: flex;
+  padding: 16px;
+}
+.brand {
+  /* background-color: green; */
+}
+
+.menu {
+  /* background-color: red; */
+  margin-left: 16px;
+
+  display: flex;
+  list-style: none;
+}
+
+.menu > li {
+  margin-left: 16px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}

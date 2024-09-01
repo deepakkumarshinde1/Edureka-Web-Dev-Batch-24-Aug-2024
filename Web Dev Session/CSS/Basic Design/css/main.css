@@ -1,0 +1,17 @@
+.box {
+  background-color: yellowgreen;
+  height: 200px;
+  width: 200px;
+  color: black;
+  overflow: auto;
+}
+
+.circle {
+  background-color: red;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box > .img {
+  height: 100%;
+  width: 100%;
+}
