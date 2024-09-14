@@ -1,34 +1,43 @@
-let text = 20;
-text = 40;
+let closeForm = document.querySelector("#close-form");
+let popUpArea = document.querySelector(".pop-up");
+let signUpButton = document.querySelector(".sign-up");
+let userRegistrationForm = document.querySelector("#user-registration-form");
+let saveFormButton = document.querySelector(".submit");
 
-const pie = 22 / 7;
-// pie = 2;
+let userList = localStorage.getItem("user-list");
+if (userList === null) {
+  userList = [];
+} else {
+  // converts preserve string to object
+  userList = JSON.parse(userList);
+}
+console.log(userList);
 
-const a = 0;
-function fun(text) {
-  console.log(text);
-} // function definition
-
-fun(typeof "deepak");
-fun(typeof 20);
-fun(typeof true);
-fun(typeof null);
-
-// string , number, boolean , object (array), undefined
-let text2;
-console.log(typeof text2);
-
-console.clear();
-
-// dom -> document object model
-// manipulation on html with javascript
-// logical representation of html
-let btn = document.querySelector("#btn");
-let countElement = document.querySelector("#count");
-let counter = 0;
-
-btn.addEventListener("click", function () {
-  counter++;
-  countElement.innerHTML = counter;
-  // callback function / inline function
+closeForm.addEventListener("click", function () {
+  popUpArea.classList.add("d-none");
 });
+
+signUpButton.addEventListener("click", function () {
+  popUpArea.classList.remove("d-none");
+});
+
+saveFormButton.addEventListener("click", function (event) {
+  let newUser = {};
+
+  let form = new FormData(userRegistrationForm);
+  form.forEach(function (value, name) {
+    newUser[name] = value;
+  });
+
+  userList.push(newUser);
+
+  // save
+  //  convert a object to a preserver string ==> JSON.stringify
+  localStorage.setItem("user-list", JSON.stringify(userList));
+  console.log(userList);
+});
+
+// value
+// classList
+// style
+// innerHTML

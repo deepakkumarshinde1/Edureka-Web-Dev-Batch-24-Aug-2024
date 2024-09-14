@@ -14,46 +14,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- registration pop up -->
-    <section class="pop-up">
-      <section class="form-area">
-        <button id="close-form">x</button>
-        <h4 class="title">User Registration</h4>
-        <form id="user-registration-form">
-          <div class="form-input">
-            <label for="">Name</label>
-            <input type="text" placeholder="Enter Your Name" name="user" />
-            <small class="user-error"></small>
-          </div>
-
-          <div class="form-input">
-            <label for="">Email</label>
-            <input type="text" placeholder="Enter Email" name="email" />
-            <small class="email-error"></small>
-          </div>
-
-          <div class="form-input">
-            <label for="">Password</label>
-            <input type="text" placeholder="Enter Password" name="password" />
-            <small class="password-error"></small>
-          </div>
-          <div class="form-input">
-            <label for="">Confirm Password</label>
-            <input
-              type="text"
-              placeholder="Enter Confirm Password"
-              name="confirm_password"
-            />
-            <small class="confirm_password-error"></small>
-          </div>
-          <div style="text-align: center">
-            <button type="button" class="btn submit">Save</button>
-            <button type="reset" class="btn reset">Reset</button>
-          </div>
-        </form>
-      </section>
-    </section>
-    <main class="container">
+    <!-- <main class="container">
       <section class="sticky-to-top">
         <section class="">
           <p class="offer">
@@ -84,8 +45,8 @@
             <li class="menu-item">Corporate Training</li>
             <li class="menu-item">Courses</li>
             <li class="menu-item">Blog</li>
-            <li class="menu-item active-effect">Log In</li>
-            <li class="menu-item active-effect sign-up">Sign Up</li>
+            <li class="menu-item">Log In</li>
+            <li class="menu-item">Sign Up</li>
           </ul>
         </header>
       </section>
@@ -146,8 +107,22 @@
           ></a>
         </section>
       </section>
-    </main>
+    </main> -->
 
+    <div>
+      <label for="">Male</label>
+      <input class="get-gender-list" type="radio" name="gender" value="male" />
+    </div>
+    <div>
+      <label for="">Female</label>
+      <input
+        class="get-gender-list"
+        type="radio"
+        name="gender"
+        value="female"
+      />
+    </div>
+    <ul id="list"></ul>
     <script src="./js/main.js"></script>
   </body>
 </html>
