@@ -1,0 +1,51 @@
+.bg-orange {
+  background-color: #fea100 !important;
+}
+.bg-dark-orange {
+  background-color: #f6721d !important;
+}
+
+.bg-blue {
+  background-color: #248ce2 !important;
+}
+
+.bg-dark-blue {
+  background-color: #0c5398 !important;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(90deg, #0c5398, #248ce2);
+}
+
+.bg-orange-gradient {
+  background: linear-gradient(90deg, #fea100, #f6721d);
+}
+
+.add-line-height {
+  line-height: 10px;
+}
+
+.gray-background-round li {
+  background-color: transparent;
+  padding: 4px 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: gray;
+}
+.gray-background-round li:hover {
+  background-color: gainsboro;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item > img {
+  height: 100% !important;
+}
+.carousel-item {
+  overflow: hidden;
+}
+
+.carousel-item > img {
+  width: 140% !important;
+  transform: translateX(-12%);
+}
