@@ -16,6 +16,156 @@
     <script src="./plugings/bs-5-3/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- registration page -->
+    <div
+      class="modal fade"
+      id="login"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title d-flex align-items-center"
+              id="staticBackdropLabel"
+            >
+              <i class="fa fa-laptop" style="font-size: 48px"></i>
+              <span class="fs-2 ms-3">Make Login</span>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <section class="row">
+              <section class="col-10 m-auto">
+                <section class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Enter Mobile"
+                  />
+                  <label for="">
+                    <i class="fa fa-mobile"></i>
+                    Enter Mobile</label
+                  >
+                </section>
+                <section class="text-center mb-3">
+                  <button class="btn btn-primary">Get OTP</button>
+                </section>
+                <section class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Enter OTP"
+                  />
+                  <label for="">
+                    <i class="fa fa-mobile"></i>
+                    Enter OTP</label
+                  >
+                </section>
+              </section>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">
+              <i class="fa fa-history"></i>
+              Reset
+            </button>
+            <button type="button" class="btn btn-success">
+              <i class="fa fa-thumbs-up"></i>
+              Sign In
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="registration"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1
+              class="modal-title d-flex align-items-center"
+              id="staticBackdropLabel"
+            >
+              <i class="fa fa-laptop" style="font-size: 48px"></i>
+              <span class="fs-2 ms-3">Let's Get Started</span>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <section class="row">
+              <section class="col-10 m-auto">
+                <section class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Enter User Name"
+                  />
+                  <label for="">
+                    <i class="fa fa-user"></i>
+                    Enter User Name</label
+                  >
+                </section>
+                <section class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Enter Email"
+                  />
+                  <label for="">
+                    <i class="fa fa-envelope-o"></i>
+                    Enter Email</label
+                  >
+                </section>
+                <section class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control rounded-0"
+                    placeholder="Enter Mobile"
+                  />
+                  <label for="">
+                    <i class="fa fa-mobile"></i>
+                    Enter Mobile</label
+                  >
+                </section>
+              </section>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">
+              <i class="fa fa-history"></i>
+              Reset
+            </button>
+            <button type="button" class="btn btn-success">
+              <i class="fa fa-thumbs-up"></i>
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="container-fluid" style="height: 200vh">
       <section class="row position-sticky top-0" style="z-index: 5">
         <section class="col-12 bg-orange">
@@ -40,12 +190,23 @@
               <i class="fa fa-search"></i>
             </button>
           </section>
-          <ul class="text-white list-unstyled d-flex mb-0 gap-3">
+          <ul
+            class="text-white list-unstyled d-flex mb-0 gap-3 align-items-center"
+          >
             <li>Corporate Training</li>
             <li>Courses</li>
             <li>Blog</li>
-            <li>Log In</li>
-            <li>Sign Up</li>
+            <li data-bs-toggle="modal" data-bs-target="#login">Login</li>
+            <li>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#registration"
+              >
+                Sign Up
+              </button>
+            </li>
           </ul>
         </header>
       </section>
@@ -165,7 +326,9 @@
             <p class="mb-0 d-flex flex-column">
               <span>become a</span><span class="fw-bold"> devops engineer</span>
             </p>
-            <a href="#">Know more <i class="fa fa-arrow-circle-o-right"></i></a>
+            <a href="#" class="text-decoration-none small fw-bold"
+              >Know more <i class="fa fa-arrow-circle-o-right"></i
+            ></a>
           </section>
           <section
             class="card p-2 flex-row justify-content-between align-items-center text-uppercase rounded-0"
@@ -174,7 +337,9 @@
             <p class="mb-0 d-flex flex-column">
               <span>become a</span><span class="fw-bold"> devops engineer</span>
             </p>
-            <a href="#">Know more <i class="fa fa-arrow-circle-o-right"></i></a>
+            <a href="#" class="text-decoration-none small fw-bold"
+              >Know more <i class="fa fa-arrow-circle-o-right"></i
+            ></a>
           </section>
           <section
             class="card p-2 flex-row justify-content-between align-items-center text-uppercase rounded-0"
@@ -183,7 +348,335 @@
             <p class="mb-0 d-flex flex-column">
               <span>become a</span><span class="fw-bold"> devops engineer</span>
             </p>
-            <a href="#">Know more <i class="fa fa-arrow-circle-o-right"></i></a>
+            <a href="#" class="text-decoration-none small fw-bold"
+              >Know more <i class="fa fa-arrow-circle-o-right"></i
+            ></a>
+          </section>
+        </section>
+      </section>
+      <section class="row">
+        <section class="col-9 m-auto">
+          <p class="h4">Trending Courses</p>
+          <ul
+            class="mt-3 menu-trending-course list-unstyled d-flex justify-content-between align-items-center text-primary"
+          >
+            <li class="active">All</li>
+            <li>Cloud Computing</li>
+            <li>DevOps</li>
+            <li>Cyber Security</li>
+            <li>BI and Visualization</li>
+            <li>Programming & Frameworks</li>
+            <li>Data Science</li>
+            <li>
+              <button class="btn"><i class="fa fa-bars"></i></button>
+            </li>
+          </ul>
+          <section class="course-list mt-5 d-flex flex-wrap gap-5">
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                  <button
+                    class="btn text-white border border-1 border-white rounded-0 px-5"
+                  >
+                    View Details
+                  </button>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+
+            <section
+              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
+            >
+              <section
+                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
+              >
+                <i class="fa fa-cubes circle fa-2x text-primary"></i>
+                <p class="mb-0 text-white text-uppercase fw-bold text-center">
+                  aws certification program
+                </p>
+              </section>
+              <section class="bg-white p-3">
+                <p class="mb-0 fs-4 fw-bold text-uppercase">
+                  aws certification program
+                </p>
+                <p class="mt-2">
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star text-warning"></i>
+                  <i class="fa fa-star-half-empty text-warning"></i>
+
+                  <span class="ms-3">4.5 (675678)</span>
+                </p>
+              </section>
+
+              <section
+                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
+              >
+                <section>
+                  <span class="fst-italic small">next batch</span>
+                  <p class="mt-2">In 0 days to 21st September</p>
+                  <i class="small">what will i learn?</i>
+
+                  <ul class="ps-3 small">
+                    <li>Introduction to AWS</li>
+                    <li>Amazon EC2</li>
+                    <li>Amazon S3 Bucket</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
           </section>
         </section>
       </section>

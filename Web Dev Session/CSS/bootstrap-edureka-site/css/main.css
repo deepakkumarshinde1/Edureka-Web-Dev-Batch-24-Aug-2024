@@ -49,3 +49,49 @@
   width: 140% !important;
   transform: translateX(-12%);
 }
+
+.menu-trending-course li {
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+.menu-trending-course li:hover {
+  color: #0c5398;
+  border-bottom-color: #248ce2;
+}
+
+.menu-trending-course .active {
+  border-bottom-color: #248ce2;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+.course-list-item {
+  width: 30%;
+}
+.course-list-item-1 {
+  background: linear-gradient(90deg, #bc66d8, #ef97b1);
+}
+
+.pop-up-content {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none !important;
+}
+
+.course-list-item:hover .pop-up-content {
+  display: flex !important;
+}
