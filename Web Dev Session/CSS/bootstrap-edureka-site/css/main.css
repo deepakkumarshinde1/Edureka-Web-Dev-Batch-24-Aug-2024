@@ -95,3 +95,38 @@
 .course-list-item:hover .pop-up-content {
   display: flex !important;
 }
+
+.query-box > p {
+  cursor: pointer;
+}
+.query-box {
+  position: fixed;
+  width: 20vw;
+  background-color: white;
+  right: 0;
+
+  border: 1px solid black;
+  z-index: 7;
+
+  animation-name: moveBox;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+
+  bottom: -300px;
+}
+.rotate {
+  animation-name: rotateAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

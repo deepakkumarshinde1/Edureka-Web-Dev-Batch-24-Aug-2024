@@ -1,0 +1,4 @@
+.html()
+.on('event', function(){})
+.val() ==> get value of input
+.val('text') ==> set value to input

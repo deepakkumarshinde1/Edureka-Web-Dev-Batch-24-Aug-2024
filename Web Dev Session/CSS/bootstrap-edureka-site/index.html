@@ -16,6 +16,52 @@
     <script src="./plugings/bs-5-3/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- as query box -->
+    <section class="query-box">
+      <p
+        class="d-flex justify-content-between px-3 py-1 mb-0 bg-danger text-white align-items-center"
+      >
+        <span class="h5">As a Query</span>
+        <span class="fa fa-angle-down fa-2x make-rotation"></span>
+      </p>
+
+      <form id="userQuery" class="p-2">
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control form-control-sm"
+            placeholder="Enter Email Id"
+            name="userEmail"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            placeholder="Enter Name"
+            name="userName"
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control-sm form-control"
+            rows="3"
+            placeholder="Enter your query, we happy to help you."
+            name="userQuestion"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button
+            class="btn btn-success btn-sm px-5"
+            id="submitQuery"
+            type="button"
+          >
+            Submit
+          </button>
+          <button class="btn btn-danger btn-sm" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
     <!-- registration page -->
     <div
       class="modal fade"
@@ -681,5 +727,8 @@
         </section>
       </section>
     </main>
+
+    <script src="./plugings/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
