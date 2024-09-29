@@ -183,3 +183,32 @@ $(function () {
 
   getDataWithFetch();
 });
+
+function xhr() {
+  // Create a new XMLHttpRequest object
+  var xhr = new XMLHttpRequest();
+
+  // Configure it: GET-request for the URL
+  xhr.open("GET", "https://jsonplaceholder.typicode.com/users", true);
+
+  // Set up a function to handle the response when it's ready
+  xhr.onload = function () {
+    if (xhr.status >= 200 && xhr.status < 300) {
+      // Parse and log the response in the console
+      var response = JSON.parse(xhr.responseText);
+      console.log(response);
+    } else {
+      console.log("Error:", xhr.statusText);
+    }
+  };
+
+  // Set up a function to handle network errors
+  xhr.onerror = function () {
+    console.log("Network Error");
+  };
+
+  // Send the request
+  xhr.send();
+}
+
+// XHR ==> XML HTTP request
