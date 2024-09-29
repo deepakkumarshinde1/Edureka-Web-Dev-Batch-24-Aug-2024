@@ -12,8 +12,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./plugings/bs-5-3/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./plugings/bs-5-3/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- as query box -->
@@ -213,6 +216,35 @@
       </div>
     </div>
     <main class="container-fluid" style="height: 200vh">
+      <section class="p-5 d-none">
+        <input
+          id="dob"
+          type="text"
+          style="width: 25%"
+          placeholder="select date"
+          readonly
+        />
+
+        <section id="user-tab">
+          <ul>
+            <li>
+              <a href="#section-1">Topic-1</a>
+            </li>
+            <li>
+              <a href="#section-2">Topic-2</a>
+            </li>
+          </ul>
+          <section id="section-1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+              nostrum.
+            </p>
+          </section>
+          <section id="section-2">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </section>
+        </section>
+      </section>
       <section class="row position-sticky top-0" style="z-index: 5">
         <section class="col-12 bg-orange">
           <p class="text-white m-0 p-1 text-center">
@@ -417,318 +449,93 @@
               <button class="btn"><i class="fa fa-bars"></i></button>
             </li>
           </ul>
-          <section class="course-list mt-5 d-flex flex-wrap gap-5">
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
+          <section
+            id="list"
+            class="course-list mt-5 d-flex flex-wrap gap-5"
+          ></section>
+        </section>
+      </section>
+      <section class="row">
+        <section class="col-6 mt-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28218.649359125608!2d72.97770676742931!3d19.220521847807344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b94164dd4d73%3A0x7eedcdb72a3ae20b!2sTCS%2C%20Yantra%20Park!5e0!3m2!1sen!2sin!4v1727628852545!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <section class="col-6 mt-3">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d941.9005531766123!2d72.9776942695814!3d19.212568998876264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDEyJzQ1LjMiTiA3MsKwNTgnNDIuMCJF!5e0!3m2!1sen!2sin!4v1727629093907!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
 
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
+        <section class="col-6 mt-3">
+          <iframe
+            width="100%"
+            height="350"
+            src="https://www.youtube.com/embed/N5fSpaaxoZc"
+            title="Machine Learning Full Course - 12 Hours | Machine Learning Roadmap [2024] | Edureka"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
 
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
+        <section class="col-6 mt-3">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FedurekaIN&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=770614843070050"
+            width="100%"
+            height="500"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </section>
 
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                  <button
-                    class="btn text-white border border-1 border-white rounded-0 px-5"
-                  >
-                    View Details
-                  </button>
-                </section>
-              </section>
-            </section>
+        <section class="col-6 mt-3">
+          <a
+            class="twitter-timeline"
+            data-lang="en"
+            data-height="500"
+            href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw"
+            >Tweets by elonmusk</a
+          >
+        </section>
 
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-
-            <section
-              class="course-list-item position-relative border border-1 border-secondary-subtle shadow-sm"
-            >
-              <section
-                class="d-flex align-items-center course-list-item-1 p-3 justify-content-center"
-              >
-                <i class="fa fa-cubes circle fa-2x text-primary"></i>
-                <p class="mb-0 text-white text-uppercase fw-bold text-center">
-                  aws certification program
-                </p>
-              </section>
-              <section class="bg-white p-3">
-                <p class="mb-0 fs-4 fw-bold text-uppercase">
-                  aws certification program
-                </p>
-                <p class="mt-2">
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star text-warning"></i>
-                  <i class="fa fa-star-half-empty text-warning"></i>
-
-                  <span class="ms-3">4.5 (675678)</span>
-                </p>
-              </section>
-
-              <section
-                class="pop-up-content text-white d-flex flex-column justify-content-center align-items-center"
-              >
-                <section>
-                  <span class="fst-italic small">next batch</span>
-                  <p class="mt-2">In 0 days to 21st September</p>
-                  <i class="small">what will i learn?</i>
-
-                  <ul class="ps-3 small">
-                    <li>Introduction to AWS</li>
-                    <li>Amazon EC2</li>
-                    <li>Amazon S3 Bucket</li>
-                  </ul>
-                </section>
-              </section>
-            </section>
-          </section>
+        <section class="col-6 mt-3">
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7246036005495980033"
+            height="774"
+            width="100%"
+            frameborder="0"
+            allowfullscreen=""
+            title="Embedded post"
+          ></iframe>
         </section>
       </section>
     </main>
 
+    <script src="./plugings/bs-5-3/js/bootstrap.min.js"></script>
     <script src="./plugings/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
     <script src="./js/main.js"></script>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
