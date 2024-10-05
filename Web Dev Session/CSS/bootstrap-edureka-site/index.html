@@ -17,6 +17,10 @@
       href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./plugings/guided-tour-arrow/dist/guides.css"
+    />
   </head>
   <body>
     <!-- as query box -->
@@ -253,6 +257,7 @@
           </p>
         </section>
         <header
+          id="title"
           class="col-12 bg-blue-gradient d-flex align-items-center justify-content-between p-2 px-5"
         >
           <img
@@ -281,6 +286,7 @@
                 class="btn btn-primary btn-sm"
                 data-bs-toggle="modal"
                 data-bs-target="#registration"
+                id="cta"
               >
                 Sign Up
               </button>
@@ -290,6 +296,7 @@
       </section>
       <section class="row">
         <section
+          id="action"
           class="col-12 d-flex justify-content-between p-3 px-5 align-items-center"
         >
           <p class="mb-0 d-flex flex-column">
@@ -479,7 +486,7 @@
           ></iframe>
         </section>
 
-        <section class="col-6 mt-3">
+        <section class="col-6 mt-3" id="youtube">
           <iframe
             width="100%"
             height="350"
@@ -492,7 +499,7 @@
           ></iframe>
         </section>
 
-        <section class="col-6 mt-3">
+        <section class="col-6 mt-3" id="footer">
           <iframe
             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FedurekaIN&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=770614843070050"
             width="100%"
@@ -531,6 +538,8 @@
     <script src="./plugings/bs-5-3/js/bootstrap.min.js"></script>
     <script src="./plugings/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js"></script>
+    <script src="./plugings/guided-tour-arrow/dist/guides.min.js"></script>
+    <script src="./js/tour.js"></script>
     <script src="./js/main.js"></script>
     <script
       async
