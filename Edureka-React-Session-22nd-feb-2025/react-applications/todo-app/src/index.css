@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Plugins */
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Class based dark mode */
+@variant dark (&:where(.dark, .dark *));

@@ -1,0 +1,16 @@
+p {
+  background-color: brown;
+  color: yellow;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.bg-dark {
+  background-color: black;
+}

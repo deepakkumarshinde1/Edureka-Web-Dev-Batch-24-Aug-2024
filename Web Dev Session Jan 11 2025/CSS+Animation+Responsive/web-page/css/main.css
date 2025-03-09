@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* margin, padding , box-sizing ==> element */
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* group selector */
+body {
+  height: 200vh;
+}
+body,
+button,
+a,
+input {
+  font-family: "Poppins", serif;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.temp-border {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.menu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 0;
+}
+
+/* child selector */
+.menu > li {
+  border-color: magenta;
+  border-width: 2px;
+  border-style: solid;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.menu > li:hover {
+  background-color: magenta;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: magenta;
+}
+
+.menu > li:hover > a {
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* horizontal as default */
+  padding: 0 30px;
+  width: 90%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 3px solid magenta; /* width style color */
+  padding: 0.75rem 0;
+
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 3;
+}
+.brand {
+  padding: 10px;
+}
+
+.cards {
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+.card {
+  border: none; /* width style color */
+  width: 25%;
+  padding: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+  /* left right */
+  align-items: center;
+  /*  */
+  cursor: pointer;
+
+  box-shadow: 0px 0px 5px 0px black;
+  /* x-axis y-axis blur scale color */
+
+  transition-property: transform, background, border-color, box-shadow, color;
+  transition-duration: 0.5s;
+}
+
+.card > h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.card > button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem 0;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+}
+
+/* card color  */
+.card:hover {
+  color: white;
+  /* transform: rotateZ(-5deg); */
+  /* transform: translateY(-1rem); */
+  transform: scale(1.1) rotateZ(-5deg);
+}
+.card:hover > button {
+  background-color: white;
+}
+
+.youtube:hover {
+  background: linear-gradient(#cd1213, #cd1213, #cd1213, #cd1213);
+  border-color: #cd1213;
+  box-shadow: 0px 0px 0px 0px #cd1213;
+}
+.youtube:hover > button {
+  color: #cd1213;
+}
+.youtube {
+  background: linear-gradient(#cd1213, white, white, white);
+}
+.tweeter {
+  background: linear-gradient(#179cf0, white, white, white);
+}
+/* .tweeter > span > i {
+  color: #179cf0;
+} */
+
+.instagram {
+  background: linear-gradient(#e2306c, white, white, white);
+}
+.tweeter:hover {
+  background: linear-gradient(#179cf0, #179cf0, #179cf0, #179cf0);
+  border-color: #179cf0;
+  box-shadow: 0px 0px 0px 0px #179cf0;
+}
+
+.tweeter:hover > button {
+  color: #179cf0;
+}
+
+.instagram:hover {
+  background: linear-gradient(#e2306c, #e2306c, #e2306c, #e2306c);
+  border-color: #e2306c;
+  box-shadow: 0px 0px 0px 0px #e2306c;
+}
+.instagram:hover > button {
+  color: #e2306c;
+}
+
+/* positions */
+.go-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #5d6d7e;
+
+  animation-name: zoom;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* rules */
+/* animation definition */
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.play-ground {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.football-image {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.football {
+  /* background-color: red; */
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-10vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+/* background */
+.hero-section {
+  height: 60vh;
+  background-color: red;
+  background-image: url(../images/bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./plugins/bs/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./plugins/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./plugins/bs/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <section class="row justify-content-center">
+        <section class="col-12">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">User App</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/user-list.html">User List</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
+        <section class="col-10 mt-5 border border-2 border-light shadow p-3">
+          <form id="userRegistrationForm">
+            <div class="mb-3">
+              <label for="username" class="form-label">FullName</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="fullName"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="userEmail"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="dob" class="form-label">Date Of Birth</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dob"
+                name="dob"
+                autocomplete="off"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Gender</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  value="male"
+                  id="male"
+                  name="gender"
+                />
+                <label class="form-check-label" for="male"> Male </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  value="female"
+                  id="female"
+                  name="gender"
+                />
+                <label class="form-check-label" for="female"> Female </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City</label>
+              <select name="userCity" id="city" class="form-select">
+                <option value="">Select City</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Rangpur">Rangpur</option>
+                <option value="Mymensingh">Mymensingh</option>
+              </select>
+            </div>
+            <button id="save-data" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

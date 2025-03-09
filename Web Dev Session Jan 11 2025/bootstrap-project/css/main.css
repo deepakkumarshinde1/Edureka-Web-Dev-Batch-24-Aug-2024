@@ -1,0 +1,196 @@
+body {
+  height: 200vh;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+.enquiry {
+  background-color: #192e60;
+}
+
+.brand-image {
+  width: 15rem;
+}
+
+.search-place {
+  background-color: #f4f5f7;
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.search-place:hover {
+  box-shadow: 0 0 5px 0px #cecece;
+}
+
+.list-unstyled > li > a {
+  text-decoration: none;
+  color: #192e60;
+  cursor: pointer;
+}
+
+.more-courses > li > a {
+  color: #848383;
+}
+
+.carousel-custom {
+  height: 55vh;
+  overflow: hidden;
+}
+
+.carousel-custom > img {
+  height: 100%;
+  transform: scaleX(1.3);
+}
+
+.top-nav-section {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 gray;
+}
+
+.help-desk-form {
+  background-color: white;
+  width: 20vw;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0;
+  z-index: 1;
+}
+
+.help-desk-rotate-icon {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+.menu-main-parent {
+  position: relative;
+}
+
+.menu-parent {
+  position: absolute;
+  display: none !important;
+  top: 100%;
+  background-color: lightcyan;
+  border: 1px solid #d0d0d0;
+}
+
+.menu-main-parent:hover > .menu-parent {
+  display: flex !important;
+}
+.menu {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu > li {
+  border: 1px solid #d0d0d0;
+  padding: 0.5rem 1rem;
+
+  width: 100%;
+}
+
+.menu > li > span {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu > li > span > i {
+  display: none;
+}
+.menu > li:hover > span > i {
+  display: flex;
+  color: #0aaefa;
+}
+.menu > li:hover {
+  border: 1px solid #0aaefa;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+.menu > li:hover > .sub-menu {
+  display: flex !important;
+}
+.sub-menu {
+  width: 20rem;
+  position: absolute;
+  background-color: #848383;
+  color: white;
+  top: 0;
+  right: -100%;
+  display: none !important;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.sub-menu > li {
+  border: 1px solid #d0d0d0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.timer {
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: white;
+  }
+  50% {
+    color: magenta;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575px) {
+  /* Styles for phones */
+  .help-desk-form {
+    width: 80vw;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for tablets */
+  .help-desk-form {
+    width: 40vw;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for laptops */
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for large desktops */
+}
+
+/* Extra Large Devices (4K Screens) */
+@media (min-width: 1200px) {
+  /* Styles for extra large screens */
+}

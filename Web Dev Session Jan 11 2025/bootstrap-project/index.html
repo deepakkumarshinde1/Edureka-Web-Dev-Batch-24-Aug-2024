@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./plugins/bs/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./plugins/guided-tour/dist/guides.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./plugins/bs/js/bootstrap.min.js"></script>
+    <script src="./plugins/jquery/jquery-3.7.1.min.js"></script>
+
+    <script src="./plugins/guided-tour/dist/guides.min.js"></script>
+
+    <title>Bootstrap project</title>
+  </head>
+  <body>
+    <!-- modal starts -->
+    <div class="modal fade" id="moreCourseModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body">
+            <section class="row">
+              <section class="col-12">
+                <h1>Course</h1>
+                <button
+                  type="button"
+                  class="btn p-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i
+                    class="fa fa-arrow-circle-left fa-3x text-secondary"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends -->
+    <main class="container-fluid">
+      <header class="row top-nav-section">
+        <!-- enquiry section start -->
+        <section
+          class="enquiry col-12 d-flex justify-content-between px-5 py-2 text-white"
+        >
+          <p class="m-0 gap-2 d-flex align-items-center">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>New Course Enquiry :</span>
+            <img src="https://www.edureka.co/img/inr_optimized.png" alt="" />
+            <span>+91 89517 55408</span>
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </p>
+          <p class="m-0 text-warning d-flex gap-2">
+            <span style="word-spacing: 0.1rem"
+              >Career level Up Offer - Flat 10% + Buy 1 Get 1 Ends in :
+              <span class="timer">0h 0m 0s</span></span
+            >
+            <a href="#" class="text-warning">GRAB NOW</a>
+          </p>
+        </section>
+        <!-- enquiry section ends -->
+        <!-- nav section start -->
+        <nav
+          class="main-menu col-12 px-5 py-3 align-content-center d-flex justify-content-between"
+        >
+          <section
+            class="d-flex align-items-center flex-lg-row flex-column gap-3"
+          >
+            <img
+              class="brand-image"
+              src="https://www.edureka.co/img/Edureka_Ver_Enter_Logo.webp"
+              alt=""
+            />
+            <section class="menu-main-parent">
+              <button class="btn btn-outline-primary rounded-0 btn-sm">
+                Categories
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+              </button>
+              <section class="menu-parent">
+                <ul class="list-unstyled menu">
+                  <li>
+                    <span
+                      >Item-1
+
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </span>
+                    <ul class="sub-menu list-unstyled">
+                      <li>Sub Menu 1</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span
+                      >Item-2
+
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </span>
+                    <ul class="sub-menu list-unstyled">
+                      <li>Sub Menu 2</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span
+                      >Item-3
+
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </span>
+                    <ul class="sub-menu list-unstyled">
+                      <li>Sub Menu 3</li>
+                      <li>Sub Menu</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span
+                      >Item-4
+
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </span>
+                    <ul class="sub-menu list-unstyled">
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                      <li>Sub Menu</li>
+                    </ul>
+                  </li>
+                  <li>Item-5</li>
+                  <li>Item-6</li>
+                  <li>Item-7</li>
+                  <li>Item-8</li>
+                  <li>Item-9</li>
+                  <li>Item-10</li>
+                  <li>Item-11</li>
+                  <li>Item-12</li>
+                </ul>
+              </section>
+            </section>
+            <span
+              class="search-place"
+              style="cursor: pointer"
+              data-bs-toggle="modal"
+              data-bs-target="#moreCourseModal"
+            >
+              <i class="fa fa-search"></i>
+              Search Course</span
+            >
+          </section>
+          <ul
+            class="mb-0 d-lg-flex d-none list-unstyled d-flex gap-3 align-items-center"
+          >
+            <li>
+              <a href="#">All Courses</a>
+            </li>
+            <li>
+              <a href="#">Corporate Training</a>
+            </li>
+            <li>
+              <a href="#">Resource</a>
+            </li>
+            <li>
+              <a class="btn btn-outline-primary rounded-0 btn-sm" href="#"
+                >Sign Up</a
+              >
+            </li>
+            <li>
+              <a class="btn btn-outline-primary rounded-0 btn-sm" href="#"
+                >Sign In</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- nav section end -->
+      </header>
+      <section class="row">
+        <nav
+          class="px-5 py-3 col-12 d-flex align-items-center justify-content-between"
+        >
+          <span class="d-flex flex-column" style="line-height: 1rem">
+            <small>Browse</small>
+            <span class="fw-bold"
+              >Courses
+              <i class="fa fa-caret-down ms-1" aria-hidden="true"></i>
+            </span>
+          </span>
+          <ul class="list-unstyled more-courses d-lg-flex d-none gap-4 mb-0">
+            <li><a href="#">Artificial Intelligence </a></li>
+            <li><a href="#">BI and Visualization </a></li>
+            <li><a href="#">Cloud Computing </a></li>
+            <li><a href="#">DevOps </a></li>
+            <li><a href="#">Data Science </a></li>
+            <li><a href="#">Cyber Security Programming & Frameworks</a></li>
+          </ul>
+          <button class="btn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </nav>
+      </section>
+      <section class="row">
+        <section class="col-12 p-0">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel-custom">
+                <img
+                  src="./images/c-1.webp"
+                  class="d-block w-100"
+                  alt="1st Image"
+                />
+              </div>
+              <div class="carousel-item carousel-custom">
+                <img
+                  src="./images/c-2.webp"
+                  class="d-block w-100"
+                  alt="2nd Image"
+                />
+              </div>
+              <div class="carousel-item carousel-custom">
+                <img
+                  src="./images/c-3.webp"
+                  class="d-block w-100"
+                  alt="3rd Image"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </section>
+      <section class="help-desk-form border border-1 border-danger">
+        <p class="bg-danger text-white p-2 d-flex justify-content-between mb-0">
+          Drop Us A Query
+          <i class="fa fa-arrow-up"></i>
+        </p>
+        <form id="user-help-desk-form" class="p-2">
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Username"
+            />
+            <label for="floatingPassword">User Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+
+          <div class="mb-3">
+            <button class="btn btn-success">Save</button>
+          </div>
+        </form>
+      </section>
+      <section class="row">
+        <section class="col-lg-4 col-12 col-md-6">
+          <iframe
+            width="100%"
+            height="238"
+            src="https://www.youtube.com/embed/5kjWh8lBxC4"
+            title="Top 10 Technologies To Learn In 2025 | Top Trending Technologies in 2025 | Edureka"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section class="col-lg-4 col-12 col-md-6">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Let your heart lead the way, but don&#39;t forget to upskill along
+              the journey!<br />Happy Valentine&#39;s Day! 💖<br />:<br />:<a
+                href="https://twitter.com/hashtag/FollowYourHeart?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#FollowYourHeart</a
+              >
+              <a
+                href="https://twitter.com/hashtag/UpskillYourself?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#UpskillYourself</a
+              >
+              <a
+                href="https://twitter.com/hashtag/ValentinesDay?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#ValentinesDay</a
+              >
+              <a
+                href="https://twitter.com/hashtag/RidiculouslyCommitted?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#RidiculouslyCommitted</a
+              >
+              <a
+                href="https://twitter.com/hashtag/Edureka?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#Edureka</a
+              >
+              <a
+                href="https://twitter.com/hashtag/LearnWithEdureka?src=hash&amp;ref_src=twsrc%5Etfw"
+                >#LearnWithEdureka</a
+              >
+              <a href="https://t.co/MQvOphdQzi">pic.twitter.com/MQvOphdQzi</a>
+            </p>
+            &mdash; Edureka (@edurekaIN)
+            <a
+              href="https://twitter.com/edurekaIN/status/1890249609949118616?ref_src=twsrc%5Etfw"
+              >February 14, 2025</a
+            >
+          </blockquote>
+        </section>
+
+        <section class="col-lg-4 col-12 col-md-6">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FedurekaIN%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=770614843070050"
+            width="100%"
+            height="500"
+            style="border: none; overflow: hidden"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </section>
+        <section class="col-lg-4 col-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d668.4871540539177!2d73.80788277206278!3d19.978923220813005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeac2be65b5a5%3A0x48096b1a5e3c5ca4!2sMcDonald&#39;s!5e0!3m2!1sen!2sin!4v1739675493654!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <section class="col-lg-4 col-12 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d937.4206154080917!2d73.80671326958259!3d19.979851998838743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDU4JzQ3LjUiTiA3M8KwNDgnMjYuNSJF!5e0!3m2!1sen!2sin!4v1739675679398!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </section>
+    </main>
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/tour.js"></script>
+  </body>
+</html>

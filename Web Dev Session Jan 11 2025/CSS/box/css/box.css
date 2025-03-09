@@ -1,0 +1,22 @@
+h1 {
+  background-color: red;
+}
+
+.box {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+
+  overflow: auto;
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+
+  border-radius: 50%;
+}
+/* viewport 
+    height => vertical => vh
+    width => horizontal => vw
+*/

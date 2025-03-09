@@ -1,0 +1,26 @@
+.btn {
+  background-color: darkcyan;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: blueviolet;
+  color: yellow;
+
+  /* padding: 10px; top bottom left right*/
+  padding: 10px 30px; /* top-bottom left-right  */
+  /* padding: 10px 20px 30px; top left-right bottom  */
+  /* padding: 10px 20px 30px 40px; top right bottom lefts  */
+  border-radius: 30px;
+
+  margin: 10px;
+}
+
+/* pseudo class => css events */
+.btn:hover {
+  background-color: #013939;
+  border-style: dotted;
+}
+
+.btn:active {
+  background-color: darkcyan;
+}

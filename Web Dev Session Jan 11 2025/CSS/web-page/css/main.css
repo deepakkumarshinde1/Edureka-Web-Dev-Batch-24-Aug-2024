@@ -1,0 +1,77 @@
+.temp-border {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.menu {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 0;
+}
+
+/* child selector */
+.menu > li {
+  border-color: magenta;
+  border-width: 2px;
+  border-style: solid;
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.menu > li:hover {
+  background-color: magenta;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: magenta;
+}
+
+.menu > li:hover > a {
+  color: white;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between; /* horizontal as default */
+  padding: 0 30px;
+  width: 90%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 3px solid magenta; /* width style color */
+}
+.brand {
+  padding: 10px;
+}
+
+.cards {
+  padding: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid black; /* width style color */
+  width: 20%;
+  padding: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+  /* left right */
+  align-items: center;
+  /*  */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript API</title>
+    <style>
+      * {
+        box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* 
+      content-box
+        w100px h100px 
+        p 18px
+        b 2px 
+
+        total => 120px X 120px
+
+
+        border-box
+            w90px 90px
+            p 10px
+            b 0px
+            
+            total => 100px X 100px 
+
+      */
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 16px;
+      }
+      .card {
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+        text-align: center;
+
+        box-shadow: 0 0 5px 2px gray;
+
+        padding: 16px;
+
+        text-transform: capitalize;
+
+        border-radius: 10px;
+      }
+
+      .card > img {
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 10px;
+      }
+
+      .card > h4 {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="cards"></section>
+    <script src="./api.js"></script>
+  </body>
+</html>
